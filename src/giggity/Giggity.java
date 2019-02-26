@@ -23,6 +23,16 @@ public class Giggity {
         verbs.add("tripped");
         verbs.add("guessed");
         verbs.add("tapped");
+        
+        ArrayList<String> verbs2 = new ArrayList<String>();
+        verbs2.add("eat");
+        verbs2.add("sleep");
+        verbs2.add("jump");
+        verbs2.add("race");
+        verbs2.add("run");
+        verbs2.add("trip");
+        verbs2.add("guess");
+        verbs2.add("tap");
 
         ArrayList<String> rhymingNouns = new ArrayList<String>();
         rhymingNouns.add("mouse");
@@ -47,13 +57,10 @@ public class Giggity {
         verb1 = verbs.get(randomNum);
         verbs.remove(randomNum);
 
-        //get the second verb
-        randomNum = (int)(Math.random() * verbs.size());
-        verb2 = verbs.get(randomNum);
-        verbs.remove(randomNum);
-        
-        //get the third verb
-        randomNum = (int)(Math.random() * verbs.size());
+        //get the second and third verb
+        randomNum = (int)(Math.random() * verbs2.size());
+        verb2 = verbs2.get(randomNum);
+        randomNum = (int)(randomNum);
         verb3 = verbs.get(randomNum);
 
         //get the three rhyming nouns
@@ -70,7 +77,7 @@ public class Giggity {
 
         //Display the poem
         System.out.println("The " + noun + " " + verb1 + " a " + rhymingNoun1 + "\n" +
-                "So it " + verb2 + " the " + rhymingNoun2 + "\n"
+                "So it could " + verb2 + " the " + rhymingNoun2 + "\n"
                 + "But it " + verb3 + " a " + rhymingNoun3); 
 
 
